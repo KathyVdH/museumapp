@@ -1,0 +1,24 @@
+<% include header %>
+
+
+<% var teller = 1; %>
+<% nieuws.forEach(function(item){ %>
+  <section>
+      <img src="/img/<%- item.afbeeldings %>" alt=<%- item.titel %>">
+
+      <h2>
+        <a href=/items/<%- item.id %>><%- item.titel %></a>
+      </h2>
+
+
+      <p class='samenv'>
+        <%- item.samenvatting %>
+      </p>
+
+      <div class='divider'> ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ </div>
+
+  </section>
+  <% teller++;}); %>
+
+
+<% include footer %>

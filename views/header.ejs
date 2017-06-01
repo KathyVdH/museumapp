@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Design Trends 2017 </title>
+		<link rel="stylesheet" type="text/css" href="/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="/css/styles.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+
+		<h1> Leonid Afremov </h1>
+
+		<img clas="hoofdafb" src="https://afremov.com/_images/Leonid_Afremov_with_his_painting_Venice_Grand_Canal_2009.jpg">
+
+		<nav>
+				<a href="/"> << Home </a>
+		  <% for (var i = 0; i < categorieen.length; i++) { %>
+		    <a href="/categorieen/<%- i %>"><%- categorieen[i] %></a>
+		  <% } %>
+		</nav>

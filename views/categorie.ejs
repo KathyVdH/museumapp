@@ -1,0 +1,21 @@
+<% include header %>
+  <% for (var i = 0; i < items.length; i++) { %>
+    <% if (items[i].categorieen.indexOf(categorieen[id]) !== -1) { %>
+      <section>
+                    <img src="/img/<%- items[i].afbeeldings %>" alt="<%- items[i].titel %>">
+
+                    <h2>
+                      <a href=/items/<%- items[i].id %>><%- items[i].titel %></a>
+                    </h2>
+
+          <p>
+            <%- items[i].samenvatting %>
+          </p>
+      </section>
+
+  <div class='divider'> ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ </div>
+
+    <% } %>
+  <% } %>
+
+<% include footer %>
