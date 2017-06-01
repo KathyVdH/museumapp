@@ -1,7 +1,7 @@
 {
-  "name": "mobiel-nieuws-demo",
+  "name": "mobiel-museum-app",
   "version": "1.0.0",
-  "description": "Mobiele nieuwssite",
+  "description": "Mobiele museumsite",
   "main": "app.js",
   "directories": {
     "test": "test"
@@ -10,13 +10,12 @@
     "start": "node app.js"
   },
   "keywords": [
-    "web",
-    "nieuws",
-    "technology",
-    "node",
-    "express"
-  ],
-  "author": "Kristof Michiels",
+    "People",
+    "Love",
+    "Places",
+    "Animals"
+    ],
+  "author": "Kathy Vdh",
   "license": "ISC",
   "homepage": "",
   "dependencies": {
