@@ -113,3 +113,14 @@ margin-top:2em;
 a {
   text-decoration: none;
 }
+
+.zoeken{
+  position: absolute;
+  top:40px;
+  left:6em;
+}
+
+.button {
+  background: rgba(0,0,50)
+  color:white;
+}

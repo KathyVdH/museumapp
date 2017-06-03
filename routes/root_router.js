@@ -3,7 +3,7 @@ var root = express.Router();
 
 root.get('/', function(req, res) {
   res.render("index", {
-    nieuws: req.app.get('nieuwsFile').nieuws,
+    schilderij: req.app.get('schilderijFile').schilderij,
     categorieen: req.app.get('categorieenFile').categorieen
   });
 });

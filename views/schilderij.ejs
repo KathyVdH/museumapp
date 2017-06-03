@@ -1,0 +1,35 @@
+<% include header %>
+
+<section>
+
+    <h3>
+      <%- item.titel %>
+    </h3>
+    <img src="/img/<%- item.afbeeldingl %>" alt="<%- item.titel %>">
+
+    <p>
+      <%- item.body %>
+    </p>
+
+
+    <div id="disqus_thread"></div>
+  <script>
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://http-localhost-5000-items-215.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+  </script>
+
+
+    <h4>Gepost in categorieën:
+
+      <% for (var i = 0; i < item.categorieen.length; i++) { %>
+        <% var item_categorie = item.categorieen[i] %>
+        <% var index_in_echte_lijst = categorieen.indexOf(item_categorie) %>
+        <a href="/categorieen/<%- index_in_echte_lijst %>"><%- item.categorieen[i] %></a> <% } %>
+    </h4>
+</section>
+
+<% include footer %>

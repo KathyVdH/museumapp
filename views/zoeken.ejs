@@ -1,0 +1,35 @@
+<% include header %>
+<%var gevonden = false; %>
+  <% for (var i = 0; i < items.length; i++) { %>
+    <%if ("tags" in items[i]){ %>
+    <% if (items[i].tags.indexOf(term) !== -1) { %>
+      <% gevonden = true; %>
+
+        <section>
+                      <img src="/img/<%- items[i].afbeeldings %>" alt="<%- items[i].titel %>">
+
+                      <h2>
+                        <a href=/items/<%- items[i].id %>><%- items[i].titel %></a>
+                      </h2>
+
+            <p>
+              <%- items[i].samenvatting %>
+            </p>
+        </section>
+
+
+    <div class='divider'> ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ </div>
+<%  } %>
+      <% } %>
+
+    <% } %>
+
+  <%  if (!gevonden) {%>
+
+      <h2>
+        Deze zoekterm leverde niets op.
+      </h2>
+
+  <%  }%>
+
+<% include footer %>
