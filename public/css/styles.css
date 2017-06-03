@@ -7,7 +7,7 @@ body {
   font-family: helvetica;
   width: 80%;
   padding:1em;
-  margin: 2em auto 2em auto;
+    margin: 2em auto 2em auto;
   line-height: 1.4em;
   font-size:70%;
   text-align: center;
@@ -38,7 +38,6 @@ nav a {
   display: inline-block;
   margin-right: 4px;
   color:white;
-  font-size:115%;
   font-weight: bold;
 }
 
@@ -47,12 +46,12 @@ nav a:hover  {
   }
 
 h1 {
-  font-size:330%;
+  font-size:300%;
   color:white;
   font-weight:bold;
   font-family:century gothic;
   position: relative;
-  top:6.7em;
+  top:7.3em;
   padding:0.5em;
   background: rgba(0,0,50,1)
   }
@@ -122,7 +121,7 @@ a {
 }
 
 button {
-  background-color: rgba(0,0,50,0.9);
+  background-color: rgba(0,0,50,1);
   color:white;
   font-weight:bold;
   padding:0.3em 0.8em 0.3em 0.8em;
