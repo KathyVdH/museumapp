@@ -7,7 +7,7 @@ body {
   font-family: helvetica;
   width: 80%;
   padding:1em;
-    margin: 2em auto 2em auto;
+  margin: 2em auto 2em auto;
   line-height: 1.4em;
   font-size:70%;
   text-align: center;
@@ -38,6 +38,7 @@ nav a {
   display: inline-block;
   margin-right: 4px;
   color:white;
+  font-size:115%;
   font-weight: bold;
 }
 
@@ -46,12 +47,12 @@ nav a:hover  {
   }
 
 h1 {
-  font-size:300%;
+  font-size:330%;
   color:white;
   font-weight:bold;
   font-family:century gothic;
   position: relative;
-  top:6.6em;
+  top:6.7em;
   padding:0.5em;
   background: rgba(0,0,50,1)
   }
@@ -117,10 +118,12 @@ a {
 .zoeken{
   position: absolute;
   top:40px;
-  left:6em;
+  left:10em;
 }
 
-.button {
-  background: rgba(0,0,50)
+button {
+  background-color: rgba(0,0,50,0.9);
   color:white;
-}
+  font-weight:bold;
+  padding:0.3em 0.8em 0.3em 0.8em;
+  }
